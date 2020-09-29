@@ -83,14 +83,27 @@ var operator = $("#operator");
 var secondNumber = $("#second-number");
 var result = $("#result");
 
-<<<<<<< HEAD
+//When an operator button is clicked, the value will appear in the operator space
 $(".operator").on("click",function(event){
   operator=$(this).val();
   console.log(operator);
   $("#operator").text(operator);
-  
+  if(operator==="plus"){
+    $("#operator").text("+");
+  }
+  if(operator==="minus"){
+    $("#operator").text("-");
+  }
+  if(operator==="times"){
+    $("#operator").text("*");
+  }
+  if(operator==="divide"){
+    $("#operator").text("/");
+  }
+  if(operator==="power"){
+    $("#operator").text("^");
+  }
 })
-=======
 
 //4
 
@@ -120,7 +133,6 @@ function operation () {
 
 
 });
->>>>>>> d3437a28469d0a38f6a3e862e94ca04e871c337f
 
 </script>
 
