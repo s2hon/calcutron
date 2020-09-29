@@ -80,8 +80,13 @@ var firstNumber = $("#first-number");
 var operator = $("#operator");
 var secondNumber = $("#second-number");
 var result = $("#result");
-=======
-});
+
+$(".operator").on("click",function(event){
+  operator=$(this).val();
+  console.log(operator);
+  $("#operator").text(operator);
+  
+})
 
 </script>
 
