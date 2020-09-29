@@ -75,12 +75,42 @@
 
 <script type="text/javascript">
 
-// Your code here...
+
+$(document).ready(function() {
+
 var firstNumber = $("#first-number");
 var operator = $("#operator");
 var secondNumber = $("#second-number");
 var result = $("#result");
-=======
+
+
+//4
+
+//need to define//
+var a = parseInt()
+//first number
+var b = parseInt()
+//second number
+
+function operation () {
+  if (operator.value === "plus") {
+    return a + b;
+  }
+  else if (operator.value === "minus"){
+    return a - b;
+  }
+  else if (operator.value === "times"){
+    return a * b;
+  }
+  else if (operator.value === "divide"){
+    return a / b;
+  }
+  else if (operator.value === "power"){
+    return a^b;
+  }
+};
+
+
 });
 
 </script>
